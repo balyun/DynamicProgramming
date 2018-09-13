@@ -20,21 +20,13 @@ public class HitungFibonacci {
         System.out.println("1, 1, 3, 3, 5, 8, 13, 21,");
     }
     private static int tampilInput(){
-        Scanner sanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         
          System.out.print("Bilangan ke-: ");
          int n = scanner.nextInt();
          
          return n;
     }
-   public static void main(String[] args) {
-        String identitas = "Mohammad Baliyun Taja / X RPL 5 / no ";
-        tampilJudul(identitas);
-        int n = tampilInput();
-        BigInteger hasil = fibo(n);
-        tampilHasil(n, hasil);
-        
-}
    private static BigInteger fibo(int n) {
        
        BigInteger[] hasil = new BigInteger[n];
@@ -49,4 +41,12 @@ public class HitungFibonacci {
    private static void tampilHasil(int n, BigInteger hasil){
        System.out.println("Bilangan Fibonacci ke-"+n+" : " + hasil);
    }
+public static void main(String[] args) {
+        String identitas = "Mohammad Baliyun Taja / X RPL 5 / no ";
+        tampilJudul(identitas);
+        int n = tampilInput();
+        BigInteger hasil = fibo(n);
+        tampilHasil(n, hasil);
+        
+}
 }
